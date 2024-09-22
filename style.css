@@ -2,6 +2,9 @@ body{
   background-color: #e9ecf3;
   font-family: 'Open Sans', sans-serif;
 }
+body::-webkit-scrollbar{
+  overflow: hidden;
+}
 .nav-bar{
   background-color: rgb(0,66,130) ;
   
