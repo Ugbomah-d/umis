@@ -1,0 +1,103 @@
+body{
+  background-color: #e9ecf3;
+  font-family: 'Open Sans', sans-serif;
+}
+.nav-bar{
+  background-color: rgb(0,66,130) ;
+  
+  color: #ffffff;
+  height: 56px;
+  min-height: 56px;
+  width: 100%;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  margin-top: 0px;
+  z-index: 2;
+  
+}
+#logo{
+  display: inline;
+  margin: 20px 10px 10px 10px;
+  width: 107px;
+  position: relative;
+  left: 40px;
+  cursor: pointer;
+}
+.page-logo{
+  display: inline;
+  cursor: pointer;
+}
+.sidebar-toggle{
+  opacity: 60%;
+  position: relative;
+  bottom: 18px;
+  left: 140px;
+  cursor: pointer;
+}
+.sidebar-toggle:hover{
+  opacity: 100;
+}
+.student-details{
+  display: inline-block;
+  position: relative;
+  right: 35px;
+  font-size: 12px;
+  font-weight: 600px;
+  text-transform: capitalize;
+  bottom: 15px;
+  cursor: pointer;
+  
+}
+.student-name{
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.student-details-box{
+  float: right;
+  height: 52px;
+  
+  /* border: 2px solid black; */
+  margin-right: 10px;
+  
+}
+.avatar{
+  border-radius: 50%;
+  height: 40px;
+  cursor: pointer;
+  margin-top: 10px;
+  position: relative;
+  right: 30px;
+}
+.sidebar{
+  position: absolute;
+  top: 70px;
+  background-color: #ffffff;
+  width: 300px;
+  border-radius: 10px;
+  z-index: 1;
+  
+}
+.hidden{
+  display: none;
+}
+li{
+  
+  padding: 10px;
+}
+.details:hover{
+  color: #a0b8c9;
+}
+.details{
+  padding: 0px;
+}
+.link{
+  cursor: pointer;
+}
+.text{
+  cursor: text;
+}
+p{
+  text-transform: capitalize;
+}

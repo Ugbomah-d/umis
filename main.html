@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    body {
+      font-family: "Segoe UI";
+      background-color: #e9ecf3;
+    }
+
+    .container {
+      /* width: 60vw;
+      height: 70vh; */
+      display: inline-flex;
+      margin-top: 20vh;
+      margin-left: 15vw;
+    }
+
+    /* .login , .info{
+      display: inline;
+    } */
+    .info {
+      background-color: #004282;
+      flex-basis: 30vw;
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .login {
+      background-color: #ffffff;
+      flex-basis: 30vw;
+      min-width: fit-content;
+    }
+
+    .info>p {
+      color: #ffffff;
+      text-align: center;
+      font-size: 0.9rem;
+      word-break: normal;
+      padding: 3vw;
+      padding-top: 3vh !important;
+      padding-bottom: 1vh !important;
+    }
+
+    .info>img {
+      padding-top: 10px;
+      padding-left: 20px;
+    }
+
+    .home {
+      border: 1px solid #ffffff;
+      display: inline;
+      color: #ffffff;
+      padding: 10px;
+      font-size: 1rem;
+      width: fit-content;
+      margin-left: 45%;
+      border-radius: 5px;
+    }
+
+    .home:hover {
+      background-color: #e9ecf3;
+      opacity: 8;
+      color: #a6d2e7;
+    }
+
+    h1 {
+      color: #536076;
+      font-size: 2rem;
+    }
+
+    p {
+      color: #98a1ae;
+      font-size: 1rem;
+    }
+
+    h1,
+    p {
+      margin-left: 3vw;
+    }
+
+    .username,
+    .password {
+      margin-left: 3vw;
+      margin-top: 10px;
+    }
+
+    .password {
+      margin-bottom: 2vh;
+    }
+
+    .icon {
+      border: 1.5px solid #ebedef;
+      padding: 7px;
+      display: inline;
+      margin-right: -4px;
+      background-color: #ebedef;
+    }
+
+    input {
+      position: relative;
+      height: calc(1.3rem + 0.75rem + 2px);
+      bottom: 2px;
+      border-left: none;
+      border-radius: 5px;
+      border: 1px solid #d8dbe0;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .btn {
+      font-size: 1rem;
+      padding: 5px;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #004282;
+      display: inline;
+      border-radius: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .bottom {
+      margin-left: 3vw;
+      margin-top: 3vh;
+      margin-bottom: 3vh;
+    }
+
+    .btn>i {
+      margin-right: 1vw;
+    }
+
+    .btn:hover {
+      background-color: #321fdb;
+    }
+    p{
+      word-wrap: break-word;
+    }
+
+    .forgot {
+      float: right;
+      margin-right: 3vw;
+      color: #321fdb;
+      font-size: 0.9rem;
+    }
+
+    .forgot:hover {
+      text-decoration: underline;
+    }
+
+    .show {
+      margin-left: 3vw;
+    }
+
+    .show>* {
+      display: inline;
+    }
+
+    .show>p {
+      position: relative;
+      bottom: 2vh;
+      margin-left: 0px;
+    }
+    @media (max-width: 1200px) {
+      .info{
+        display: none;
+      }
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/77769afc54.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="login">
+      <h1>Login</h1>
+      <p>Sign In to your account</p>
+      <div class="username">
+        <div class="icon"><i class="fa-solid fa-user"></i></div>
+        <input type="text" placeholder="Username" required>
+      </div>
+      <div class="password">
+        <div class="icon"><i class="fa-solid fa-lock"></i></div>
+        <input type="text" placeholder="Password" required>
+      </div>
+      <div class="show">
+        <input type="checkbox">
+        <p class="show">Show password</p>
+      </div>
+      <div class="bottom">
+        <a href="./index.html">
+          <div class="btn"><i class="fa-solid fa-right-to-bracket"></i> Login</div>
+        </a>
+        <a href="#" class="forgot">Forgot Password?</a>
+      </div>
+    </div>
+
+
+    <div class="info">
+      <img src="./assets/logo-light.png" alt="School logo">
+      <p>We want to make it easy for our lecturers, students,
+        alumnae and employers to access information as securely and
+        accurately as possible</p>
+
+      <div class="home"><a href="#"></a><i class="fa-solid fa-house"></i> Home</a></div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

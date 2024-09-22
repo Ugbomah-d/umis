@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Babcock University Management System</title>
+  <link href="./style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="nav-bar">
+    <div class="page-logo">
+      <a href="./main.html">
+        <img id="logo" class="link" src="./assets/logo_header.png" alt="open baraza logo">
+      </a>
+      <img class="sidebar-toggle link" src="./assets/sidebar-toggle-light.png">
+    </div>
+    <div class="student-details-box">
+      <h2 class="student-details text">Main campus (Undergarduate) | <span class="student-name text">Ugbomah, Daniel Timinepre</span></h2>
+      <img class="avatar" src="./assets/avatar.png" alt="avatar">
+    </div>
+
+    
+  </div>
+  <!-- sidebar -->
+  <div class="sidebar">
+    <ul>
+      <li><p class="details link">Dashboard</p></li>
+      <li><p class="details link">School Info</p></li>
+      <li><p class="details link">Personal Details</p></li>
+      <li >
+       
+        <span class="details link">Academic Details</span>
+        <ul class="submenu hidden">
+          <li class="details link"><p>Semester Result</p></li>
+          <li class="details link"><p>Unofficial Transcript</p></li>
+          <li class="details link"><p>Repeated Courses</p></li>
+          <li class="details link"><p>Checking List</p></li>
+          <li class="details link"><p>Post Query</p></li>
+        </ul>
+      </li>
+      <li><span id="courses" class="details link">Course Selection</span>
+        <ul id="course-stuff" class="submenu hidden">
+          <li class="details link"><p>Commence Registration</p></li>
+          <li class="details link"><p>Select Meal Type</p></li>
+          <li class="details link"><p>Select Residence</p></li>
+          <li class="details link"><p>Select Worship center</p></li>
+          <li class="details link"><p>Select courses</p></li>
+          <li class="details link"><p>Outstanding courses</p></li>
+          <li class="details link"><p>Currrent timetable</p></li>
+          <li class="details link"><p>Selected course list</p></li>
+          <li class="details link"><p>Selected timetable</p></li>
+          <li class="details link"><p>Special Selectionn</p></li>
+          <li class="details link"><p>Submit registration</p></li>
+        </ul>
+      </li>
+
+      <li>
+        <span class="details link">Finances</span>
+        <ul id="finances" class="submenu hidden">
+          <li><p class="details link">Financial Statement</p></li>
+          <li><p class="details link">Select Payment</p></li>
+          <li><p class="details link">Current Charges</p></li>
+          <li><p class="details link">Check Registration Status</p></li>
+          <li><p class="details link">Registration Status</p></li>
+          <li><p class="details link">Financial Clearance</p></li>
+          <li><p class="details link">Print Course Form</p></li>
+          <li><p class="details link">Register Previous Semesters</p></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
