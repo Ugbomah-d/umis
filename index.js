@@ -11,8 +11,6 @@ function hideAll(){
   for(var i=0; i<document.querySelectorAll(".submenu").length; i++ ){
     if(!document.querySelectorAll(".submenu")[i].classList.contains("hidden")){
       document.querySelectorAll(".submenu")[i].classList.add("hidden")
-    }else{
-      continue;
     }
   }
 }
