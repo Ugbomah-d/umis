@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- nav bar -->
   <div class="nav-bar">
     <div class="page-logo">
       <a href="./main.html">
@@ -17,6 +18,7 @@
       </a>
       <img class="sidebar-toggle link" src="./assets/sidebar-toggle-light.png">
     </div>
+    
     <div class="student-details-box">
       <h2 class="student-details text">Main campus (Undergarduate) | <span class="student-name text">Ugbomah, Daniel Timinepre</span></h2>
       <img class="avatar" src="./assets/avatar.png" alt="avatar">
@@ -29,9 +31,9 @@
       <li><p class="details link">Dashboard</p></li>
       <li><p class="details link">School Info</p></li>
       <li><p class="details link">Personal Details</p></li>
-      <li >
-       
-        <span class="details link">Academic Details</span>
+
+      <li >       
+        <span class="details link" id="academic_details">Academic Details</span>
         <ul class="submenu hidden">
           <li class="details link"><p>Semester Result</p></li>
           <li class="details link"><p>Unofficial Transcript</p></li>
@@ -57,21 +59,23 @@
       </li>
 
       <li>
-        <span class="details link">Finances</span>
-        <ul id="finances" class="submenu hidden">
-          <li><p class="details link">Financial Statement</p></li>
-          <li><p class="details link">Select Payment</p></li>
-          <li><p class="details link">Current Charges</p></li>
-          <li><p class="details link">Check Registration Status</p></li>
-          <li><p class="details link">Registration Status</p></li>
-          <li><p class="details link">Financial Clearance</p></li>
-          <li><p class="details link">Print Course Form</p></li>
-          <li><p class="details link">Register Previous Semesters</p></li>
+        <span class="details link" id="finances">Finances</span>
+        <ul class="submenu hidden">
+          <li class="details link"><p>Financial Statement</p></li>
+          <li class="details link"><p>Select Payment</p></li>
+          <li class="details link"><p>Current Charges</p></li>
+          <li class="details link"><p>Check Registration Status</p></li>
+          <li class="details link"><p>Registration Status</p></li>
+          <li class="details link"><p>Financial Clearance</p></li>
+          <li class="details link"><p>Print Course Form</p></li>
+          <li class="details link"><p>Register Previous Semesters</p></li>
 
         </ul>
       </li>
     </ul>
   </div>
+
+  <!-- javascript link -->
   <script src="index.js"></script>
 </body>
 </html>

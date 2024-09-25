@@ -1,29 +1,37 @@
-// alert("Working");
-const line = document.querySelector("span.link");
-const link = document.querySelector("li ul");
-const toggle = document.querySelector(".sidebar-toggle");
-const sidebar = document.querySelector(".sidebar");
-const courses = document.querySelector("#courses");
-const course = document.querySelector("#course-stuff");
-const finance = document.querySelector("#finances")
 
-line.addEventListener('click', function(){
-  if(!course.classList.contains("hidden")){
-    course.classList.add("hidden");
+//Function to hide sidebar
+function sidebar(){
+  document.querySelector(".sidebar-toggle").addEventListener('click', function(){
+    document.querySelector(".sidebar").classList.toggle("hidden");
+  });
+}
+
+//Function to hide all submenu
+function hideAll(){
+  for(var i=0; i<document.querySelectorAll(".submenu").length; i++ ){
+    if(!document.querySelectorAll(".submenu")[i].classList.contains("hidden")){
+      document.querySelectorAll(".submenu")[i].classList.add("hidden")
+    }else{
+      continue;
+    }
   }
-  link.classList.toggle("hidden");
+}
+
+//Toggling the hidden class in academic details
+document.querySelector("#academic_details").addEventListener('click', function(){
+  hideAll();
+  document.querySelector("#academic_details + ul").classList.toggle("hidden");
 })
-toggle.addEventListener('click', function(){
-  sidebar.classList.toggle("hidden");
+
+//Toggling the hidden class in courses
+document.querySelector("#courses").addEventListener('click', function(){
+  hideAll();
+  document.querySelector("#courses + ul").classList.toggle("hidden");
 })
-courses.addEventListener('click', function(){
-  if(!link.classList.contains("hidden")){
-    link.classList.add("hidden");    
-  } 
-  course.classList.toggle("hidden");
+
+//Toggling the hidden class in finances
+document.querySelector("#finances").addEventListener('click', function(){
+  hideAll();
+  document.querySelector("#finances + ul").classList.toggle("hidden");
 })
-line.addEventListener('click', function(){
-  if(!finance.classList.contains("hidden")){
-    finance.classList.toggle("hidden");
-  }
-})
+
