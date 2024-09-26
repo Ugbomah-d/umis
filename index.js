@@ -1,10 +1,8 @@
 
 //Function to hide sidebar
-function sidebar(){
-  document.querySelector(".sidebar-toggle").addEventListener('click', function(){
-    document.querySelector(".sidebar").classList.toggle("hidden");
-  });
-}
+document.querySelector(".sidebar-toggle").addEventListener('click', function(){
+  document.querySelector(".sidebar").classList.toggle("hidden");
+});
 
 //Function to hide all submenu
 function hideAll(){
@@ -17,19 +15,25 @@ function hideAll(){
 
 //Toggling the hidden class in academic details
 document.querySelector("#academic_details").addEventListener('click', function(){
-  hideAll();
+  if(document.querySelector("#academic_details + ul").classList.contains("hidden")){
+    hideAll();
+  }
   document.querySelector("#academic_details + ul").classList.toggle("hidden");
 })
 
 //Toggling the hidden class in courses
 document.querySelector("#courses").addEventListener('click', function(){
-  hideAll();
+  if(document.querySelector("#courses + ul").classList.contains("hidden")){
+    hideAll();
+  }
   document.querySelector("#courses + ul").classList.toggle("hidden");
 })
 
 //Toggling the hidden class in finances
 document.querySelector("#finances").addEventListener('click', function(){
-  hideAll();
+  if(document.querySelector("#finances + ul").classList.contains("hidden")){
+    hideAll();
+  }
   document.querySelector("#finances + ul").classList.toggle("hidden");
 })
 
