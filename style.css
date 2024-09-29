@@ -84,9 +84,11 @@ body{
 .hidden{
   display: none;
 }
-li{
-  
+li{  
   padding: 10px;
+}
+ul{
+  list-style: none;
 }
 .details:hover{
   color: #a0b8c9;
